@@ -1,9 +1,8 @@
-name: Test de Valgrind
+name: "Test 7: Memoria Caché - CLOCK con 1 CPU + 1 IO"
 
 on:
   push:
-    branches:
-      - main
+  pull_request:
 
 jobs:
   build:
@@ -21,7 +20,7 @@ jobs:
           cd so-commons-library
           make install
 
-      - name: Ejecutar test de Valgrind
+      - name: Ejecutar test
         run: |
-          chmod +x tests/testvg.sh
-          ./tests/testvg.sh
+          chmod +x ejecutar_test.sh
+          ./ejecutar_test.sh 7
