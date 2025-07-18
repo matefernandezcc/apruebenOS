@@ -661,7 +661,7 @@ case $numero in
     pid_io4=$!
     sleep 0.5
 
-    sleep $(echo "1800 / 5" | bc)   # Objetivo: 30 minutos (1800)
+    sleep $(echo "1800" | bc)   # Objetivo: 30 minutos (1800)
 
     echo -e "\e[1;34;47m =====    🔄 Matando IOs con Ctrl+C (SIGINT)    ===== \e[0m"
     kill -SIGINT "$pid_io1"
@@ -753,7 +753,7 @@ case $numero in
     pid_io4=$!
     sleep 0.5
 
-    sleep $(echo "1800 / 5" | bc)   # Objetivo: 30 minutos (1800)
+    sleep $(echo "1800" | bc)   # Objetivo: 30 minutos (1800)
 
     echo -e "\e[1;34;47m =====    🔄 Matando IOs con Ctrl+C (SIGINT)    ===== \e[0m"
     kill -SIGINT "$pid_io1"
